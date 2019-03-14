@@ -1,0 +1,71 @@
+$main-color: #2196f3
+.transplants
+
+.transplants__p
+  text-transform: uppercase
+  margin-left: 20px
+  margin-right: 20px
+
+.transplants__options-list
+  list-style: none
+  padding-left: 0
+  margin-bottom: 0
+
+.options-list-item
+  position: relative
+  padding-left: 20px
+  user-select: none
+
+  &:hover
+    background-color: #f1fcff
+
+  &:hover .options-list-item__onlyThis
+    visibility: visible
+
+.options-list-item__onlyThis
+  cursor: pointer
+  position: absolute
+  right: 0
+  top: 0
+  bottom: 0
+  padding: 8px 0
+  visibility: hidden
+  display: flex
+  align-items: center
+  margin-right: 20px
+  font-size: 1.2rem
+  color: $main-color
+  text-transform: uppercase
+
+  &:hover
+    color: #ff6d00
+
+.options-list-item__input
+  display: none
+
+.options-list-item__label
+  display: flex
+  align-items: center
+  position: relative
+  cursor: pointer
+  padding: 8px 0 8px 40px
+
+.options-list-item__label:before
+  content: ""
+  position: absolute
+  left: 0
+  display: inline-block
+  width: 20px
+  height: 20px
+  border: 1px solid #d2d5d6
+  border-radius: 5px
+
+.options-list-item__input:checked + .options-list-item__label:before
+  content: "\2713"
+  color: $main-color 
+  border-color: $main-color
+  text-align: center
+
+@media (max-width: 816px)
+  .options-list-item__onlyThis
+    display: none

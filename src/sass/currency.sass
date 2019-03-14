@@ -1,0 +1,44 @@
+$main-color: #2196f3
+  
+.currency
+  text-transform: uppercase
+  margin: 0 20px 0 20px
+
+.currency__p
+  margin: 0 0 15px 0
+
+.currency__input
+  display: none  
+
+.currency__label_left-border-radius
+  border-radius: 10px 0 0 10px
+
+.currency__label_right-border-radius
+  border-radius: 0 10px 10px 0
+
+.currency__label
+  cursor: pointer
+  display: inline-block
+  padding: 15px 20px
+  color: $main-color
+  border: 1px solid #d2d5d6
+  margin-right: -1px
+  position: relative
+  z-index: 1
+
+  &:hover
+    z-index: 2
+    border: 1px solid $main-color
+
+.currency__input:checked + .currency__label
+  background-color: $main-color
+  color: white
+  border: 1px solid $main-color
+  z-index: 2
+
+@media (max-width: 816px)
+  .currency__label
+    display: block
+    border-radius: 10px
+    margin-top: 10px
+  

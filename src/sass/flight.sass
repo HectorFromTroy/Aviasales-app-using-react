@@ -1,0 +1,111 @@
+$font-color: #4a4a4a
+$buttonWidth: 160px
+
+.flight
+  display: flex
+  background-color: white
+  border-radius: 10px
+  color: $font-color
+  font-size: 1.4rem
+
+  &:not(:first-child)
+    margin-top: 20px
+
+.flight-leftSide
+  padding: 20px
+  border-right: 1px solid #f3f7fa
+
+.flight__carrier-wrapper
+  display: flex
+  height: 55px
+  align-items: center
+
+.flight__buyButton
+  margin-top: 25px
+  width: $buttonWidth
+  padding: 10px 0
+  background-color: #ff6d00
+  border: none
+  border-radius: 5px
+  color: white
+  font-weight: bold
+  font-family: "Roboto-Light"
+  box-shadow: inset 0px -1px 0px 0px #d64d08
+  cursor: pointer
+
+  &:hover
+    background-color: #ff8124
+
+.buyButton__price_rub:after
+  margin-left: 5px
+  content: "\20BD"
+
+.buyButton__price_usd:after
+  margin-left: 5px
+  content: "\0024"
+
+.buyButton__price_eur:after
+  margin-left: 5px
+  content: "\20AC"
+
+.flight__carrier
+  display: block
+
+.flight-rightSide
+  padding: 28px 28px 65px 28px
+
+.flight__schedule
+  width: 300px
+  display: flex
+  justify-content: space-between
+
+.schedule__time
+  font-size: 2.2em
+  font-weight: bold
+  width: 75px
+
+.transplants-count__span
+  position: relative
+  padding-bottom: 5px
+  text-transform: uppercase
+  font-size: .8em
+  color: #8b9497
+  border-bottom: 1px solid #d2d5d6
+
+.transplants-count__span:after
+  content: ""
+  position: absolute
+  width: 20px
+  height: 20px
+  display: block
+  background: url("../../public/img/plane.png") no-repeat 
+  background-size: 20px
+  margin-left: calc(100% - 20px)
+  margin-top: -5px
+
+.schedule__transplants-count
+  width: 120px
+  text-align: center
+  margin-top: 5px
+
+.flight__city-date
+  margin-top: 5px
+  display: flex
+  justify-content: space-between
+
+.city-date__item
+  width: 130px
+
+.city-date__destination
+  text-align: right
+
+.city-date__city
+  font-weight: bold
+
+.city-date__date
+  margin-top: 5px
+  color: #a7aeb0
+
+@media (max-width: 816px)
+  .flight-rightSide
+    padding: 28px 10px 65px 10px
