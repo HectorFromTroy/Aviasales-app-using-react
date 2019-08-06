@@ -5,3 +5,5 @@ This is my realization of test-task in this repository: https://github.com/Kosya
 Project made by using React and SASS  
 Made without using create react app  
 responsiveness until 540px
+
+![](https://media.giphy.com/media/ibeJFujOsRsIWbZX8s/giphy.gif)
